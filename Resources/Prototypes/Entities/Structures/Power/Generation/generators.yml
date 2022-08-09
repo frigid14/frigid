@@ -159,6 +159,13 @@
   components:
   - type: PowerSupplier
     supplyRate: 3000
+  - type: Generator
+  - type: ActivatableUI
+    key: enum.GeneratorComponentUiKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.GeneratorComponentUiKey.Key
+        type: GeneratorBoundUserInterface
 
 - type: entity
   parent: [ BaseGenerator, ConstructibleMachine ]
