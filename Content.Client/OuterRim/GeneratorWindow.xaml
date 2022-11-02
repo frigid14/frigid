@@ -1,5 +1,5 @@
-﻿<fw:FancyWindow xmlns:fw="clr-namespace:Content.Client.UserInterface"
-                xmlns="https://spacestation14.io"
+﻿<controls:FancyWindow xmlns="https://spacestation14.io"
+                xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                 MinSize="270 130"
                 SetSize="360 180"
                 Title="Generator">
@@ -21,4 +21,4 @@
             <SpriteView Name="EntityView" SetSize="64 64" Scale="2 2" OverrideDirection="South" />
         </PanelContainer>
     </BoxContainer>
-</fw:FancyWindow>
+</controls:FancyWindow>
