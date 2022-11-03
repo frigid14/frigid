@@ -170,6 +170,8 @@
 - type: entity
   parent: [ BaseGenerator, ConstructibleMachine ]
   id: GeneratorPlasma
+  name: plasma generator
+  description: Generates power from sheets of solid plasma.
   suffix: Plasma, 5kW
   components:
   - type: PowerSupplier

@@ -12,9 +12,11 @@ public sealed class SharedGeneratorComponent : Component
     public float RemainingFuel = 0.0f;
 
     [DataField("targetPower"), ViewVariables(VVAccess.ReadWrite)]
-    public float TargetPower = 15_000.0f;
+    public float TargetPower = 0;
+
     [DataField("optimalPower"), ViewVariables(VVAccess.ReadWrite)]
     public float OptimalPower = 15_000.0f;
+
     [DataField("optimalBurnRate"), ViewVariables(VVAccess.ReadWrite)]
     public float OptimalBurnRate = 1 / 4.0f; // Once every 45 seconds.
 
@@ -28,9 +30,9 @@ public sealed class SharedGeneratorComponent : Component
 [Serializable, NetSerializable]
 public sealed class SetTargetPowerMessage : BoundUserInterfaceMessage
 {
-    public int TargetPower;
+    public float TargetPower;
 
-    public SetTargetPowerMessage(int targetPower)
+    public SetTargetPowerMessage(float targetPower)
     {
         TargetPower = targetPower;
     }

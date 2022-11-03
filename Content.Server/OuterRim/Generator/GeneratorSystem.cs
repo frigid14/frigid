@@ -22,7 +22,7 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
 
     private void OnTargetPowerSet(EntityUid uid, SharedGeneratorComponent component, SetTargetPowerMessage args)
     {
-        component.TargetPower = args.TargetPower * 1000;
+        component.TargetPower = args.TargetPower;
     }
 
     private void OnInteractUsing(EntityUid uid, SharedGeneratorComponent component, InteractUsingEvent args)
@@ -46,11 +46,13 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
         {
             supplier.Enabled = !(gen.RemainingFuel <= 0.0f || xform.Anchored == false);
 
-            supplier.MaxSupply = gen.TargetPower;
+            float maxFuelRate = 90f/3600; // 90 sheets in 60 minutes = 0.025 sheets/sec
+            var fuelRate = gen.TargetPower * maxFuelRate;
+            gen.RemainingFuel = MathF.Max(gen.RemainingFuel - (fuelRate * frameTime), 0.0f);
 
-            var eff = 1 / CalcFuelEfficiency(gen.TargetPower, gen.OptimalPower);
+            // Plasma: 400 kJ/sheet
+            supplier.MaxSupply = fuelRate * 400000f * CalcFuelEfficiency(gen.TargetPower);
 
-            gen.RemainingFuel = MathF.Max(gen.RemainingFuel - (gen.OptimalBurnRate * frameTime * eff), 0.0f);
             UpdateUi(gen);
         }
     }

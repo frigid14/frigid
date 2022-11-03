@@ -32,7 +32,7 @@ public sealed class GeneratorBoundUserInterface : BoundUserInterface
        _window?.Dispose();
     }
 
-    public void SetTargetPower(int target)
+    public void SetTargetPower(float target)
     {
         SendMessage(new SetTargetPowerMessage(target));
     }

@@ -11,8 +11,8 @@ public abstract class SharedGeneratorSystem : EntitySystem
 
     }
 
-    public static float CalcFuelEfficiency(float targetPower, float optimalPower)
+    public static float CalcFuelEfficiency(float targetPower)
     {
-        return MathF.Pow(optimalPower / targetPower, 1.3f);
+        return (float)(targetPower/2 + 0.2);
     }
 }
