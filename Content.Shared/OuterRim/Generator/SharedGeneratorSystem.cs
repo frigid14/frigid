@@ -5,14 +5,4 @@
 /// </summary>
 public abstract class SharedGeneratorSystem : EntitySystem
 {
-    /// <inheritdoc/>
-    public override void Initialize()
-    {
-
-    }
-
-    public static float CalcFuelEfficiency(float targetPower)
-    {
-        return (float)(targetPower/2 + 0.2);
-    }
 }

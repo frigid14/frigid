@@ -14,14 +14,11 @@ public sealed class SharedGeneratorComponent : Component
     [DataField("targetPower"), ViewVariables(VVAccess.ReadWrite)]
     public float TargetPower = 0;
 
-    [DataField("optimalPower"), ViewVariables(VVAccess.ReadWrite)]
-    public float OptimalPower = 15_000.0f;
-
-    [DataField("optimalBurnRate"), ViewVariables(VVAccess.ReadWrite)]
-    public float OptimalBurnRate = 1 / 4.0f; // Once every 45 seconds.
-
     [DataField("fuelMaterial"), ViewVariables(VVAccess.ReadWrite)]
     public string FuelMaterial = "Plasma";
+
+    public float Efficiency = 0;
+    public float Output = 0;
 }
 
 /// <summary>
@@ -46,15 +43,15 @@ public sealed class GeneratorComponentBuiState : BoundUserInterfaceState
 {
     public float RemainingFuel;
     public float TargetPower;
-    public float OptimalPower;
-    public float OptimalBurnRate; // Once every 120 seconds.
+    public float Efficiency;
+    public float Output;
 
     public GeneratorComponentBuiState(SharedGeneratorComponent component)
     {
         RemainingFuel = component.RemainingFuel;
         TargetPower = component.TargetPower;
-        OptimalPower = component.OptimalPower;
-        OptimalBurnRate = component.OptimalBurnRate;
+        Efficiency = component.Efficiency;
+        Output = component.Output;
     }
 }
 

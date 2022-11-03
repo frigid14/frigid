@@ -9,6 +9,8 @@
                 <!-- Power -->
                 <Label Text="Throttle"/>
                 <Slider Name="TargetPower" MinWidth="200" MinValue="0" MaxValue="1"/>
+                <Label Text="Power Output"/>
+                <Label Name="Output" Text="?"/>
                 <Label Text="Efficiency:"/>
                 <Label Name="Efficiency" Text="???%"/>
                 <Label Text="Fuel use:"/>

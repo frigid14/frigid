@@ -1,15 +1,10 @@
 diff a/Resources/Prototypes/Entities/Structures/Power/Generation/generators.yml b/Resources/Prototypes/Entities/Structures/Power/Generation/generators.yml	(rejected hunks)
-@@ -161,6 +161,13 @@
+@@ -162,7 +162,7 @@
+   suffix: Plasma, 5kW
    components:
    - type: PowerSupplier
-     supplyRate: 30000
-+  - type: Generator
-+  - type: ActivatableUI
-+    key: enum.GeneratorComponentUiKey.Key
-+  - type: UserInterface
-+    interfaces:
-+      - key: enum.GeneratorComponentUiKey.Key
-+        type: GeneratorBoundUserInterface
-   - type: Sprite
-     sprite: Structures/Power/Generation/portable_generator.rsi
-     state: portgen0_1
+-    supplyRate: 30000
++    supplyRampRate: 1000
+   - type: Generator
+   - type: ActivatableUI
+     key: enum.GeneratorComponentUiKey.Key

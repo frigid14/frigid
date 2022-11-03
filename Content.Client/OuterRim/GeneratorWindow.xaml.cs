@@ -30,7 +30,8 @@ public sealed partial class GeneratorWindow : FancyWindow
         // ReSharper disable once CompareOfFloatsByEqualityOperator
         if (_lastState?.TargetPower != state.TargetPower)
             TargetPower.SetValueWithoutEvent(state.TargetPower);
-        Efficiency.Text = SharedGeneratorSystem.CalcFuelEfficiency(state.TargetPower).ToString("P1");
+        Output.Text = (state.Output/1000).ToString("F1") + " kW";
+        Efficiency.Text = state.Efficiency.ToString("P1");
         FuelFraction.Value = state.RemainingFuel - (int) state.RemainingFuel;
         FuelLeft.Text = ((int) MathF.Floor(state.RemainingFuel)).ToString();
         _lastState = state;

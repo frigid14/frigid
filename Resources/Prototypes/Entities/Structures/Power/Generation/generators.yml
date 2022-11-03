@@ -158,7 +158,7 @@
   suffix: Basic, 3kW
   components:
   - type: PowerSupplier
-    supplyRate: 3000
+    supplyRampRate: 1000
   - type: Generator
   - type: ActivatableUI
     key: enum.GeneratorComponentUiKey.Key

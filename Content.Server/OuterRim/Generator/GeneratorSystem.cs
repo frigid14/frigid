@@ -5,6 +5,7 @@ using Content.Shared.Construction.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Materials;
 using Content.Shared.OuterRim.Generator;
+using Content.Shared.Stacks;
 using Robust.Server.GameObjects;
 
 namespace Content.Server.OuterRim.Generator;
@@ -30,12 +31,13 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
         if (!TryComp(args.Used, out MaterialComponent? mat) || !TryComp(args.Used, out StackComponent? stack))
             return;
 
+        var materials = mat.Materials;
+
         if (!mat.MaterialIds.Contains(component.FuelMaterial))
             return;
 
         component.RemainingFuel += stack.Count;
         QueueDel(args.Used);
-        return;
     }
 
     public override void Update(float frameTime)
@@ -51,7 +53,11 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
             gen.RemainingFuel = MathF.Max(gen.RemainingFuel - (fuelRate * frameTime), 0.0f);
 
             // Plasma: 400 kJ/sheet
-            supplier.MaxSupply = fuelRate * 400000f * CalcFuelEfficiency(gen.TargetPower);
+            var energyIn = fuelRate * 400000f;
+            supplier.MaxSupply = energyIn * CalcFuelEfficiency(gen.TargetPower);
+
+            gen.Output = supplier.SupplyRampPosition;
+            gen.Efficiency = gen.Output / energyIn;
 
             UpdateUi(gen);
         }
@@ -63,5 +69,10 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
             return;
 
         _uiSystem.TrySetUiState(comp.Owner, GeneratorComponentUiKey.Key, new GeneratorComponentBuiState(comp));
+    }
+
+    private static float CalcFuelEfficiency(float targetPower)
+    {
+        return (float)(targetPower/2 + 0.2);
     }
 }
