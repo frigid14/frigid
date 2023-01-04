@@ -1,0 +1,37 @@
+- type: department
+  id: Civilian
+  description: department-Civilian-description
+  color: "#9FED58"
+  roles:
+  - Bartender
+  - Botanist
+  - Chef
+  - Janitor
+  - Lawyer
+  - Librarian
+  - Passenger
+
+- type: department
+  id: Engineering
+  description: department-Engineering-description
+  color: "#EFB341"
+  roles:
+  - StationEngineer
+  - TechnicalAssistant
+
+- type: department
+  id: Medical
+  description: department-Medical-description
+  color: "#52B4E9"
+  roles:
+  - Chemist
+  - MedicalDoctor
+  - MedicalIntern
+
+- type: department
+  id: Security
+  description: department-Command-description
+  color: "#DE3A3A"
+  roles:
+  - SecurityCadet
+  - SecurityOfficer
