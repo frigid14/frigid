@@ -11,4 +11,4 @@
         prefixCreator: '14'
       overflowJobs: []
       availableJobs:
-        Captain: [ 1, 1 ]
+        Passenger: [ 1, 1 ]
