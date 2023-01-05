@@ -287,15 +287,15 @@
       - names_last
 ## Central Command
 
-- type: entity
-  name: CentCom official
-  id: RandomHumanoidSpawnerCentcomOfficial
-  components:
-    - type: Icon
-      sprite: Markers/jobs.rsi
-      state: centcom
-    - type: RandomHumanoidSpawner
-      settings: CentcomOfficial
+#- type: entity
+#  name: CentCom official
+#  id: RandomHumanoidSpawnerCentcomOfficial
+#  components:
+#    - type: Icon
+#      sprite: Markers/jobs.rsi
+#      state: centcom
+#    - type: RandomHumanoidSpawner
+#      settings: CentcomOfficial
 
 - type: randomHumanoidSettings
   id: CentcomOfficial
