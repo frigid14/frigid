@@ -540,9 +540,6 @@
   categories:
   - UplinkJob
   conditions:
-  - !type:BuyerJobCondition
-    whitelist:
-    - Chaplain
   - !type:BuyerWhitelistCondition
     blacklist:
       components:
