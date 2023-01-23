@@ -6,7 +6,7 @@ job-description-chef = You needed a job for winter break, and decided to take up
 job-description-lawyer = Years of law school, only for the apocalypse to break out and you're now useless.
 job-description-librarian = You thought that being a librarian was an easy way to get paid, however books might not help you in an one on one fight with the hazards.
 job-description-musician = You knew from the beginning you had that musical talent, play harmonous tunes to the hazards and pray they spare you!
-job-description-passenger = You weren't able to get a job, and now that the apocalypse hit; you're stuck here. Have fun.
+job-description-passenger = It doesn't matter who or where you came from - all it matters is you're now here, waiting for evac..
 
 # medical
 job-description-chemist = Create medicines, medicines and medicines. Proceed to sell them!

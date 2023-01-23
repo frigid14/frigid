@@ -44,7 +44,7 @@
   name: quartermaster
   components:
   - type: SpawnPoint
-    job_id: Quartermaster
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -57,7 +57,7 @@
   name: cargotechnician
   components:
   - type: SpawnPoint
-    job_id: CargoTechnician
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -69,7 +69,7 @@
   name: salvagespecialist
   components:
   - type: SpawnPoint
-    job_id: SalvageSpecialist
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -95,7 +95,7 @@
   name: technical assistant
   components:
   - type: SpawnPoint
-    job_id: TechnicalAssistant
+    job_id: Passenger
 
 - type: entity
   id: SpawnPointMedicalIntern
@@ -103,7 +103,7 @@
   name: medical intern
   components:
   - type: SpawnPoint
-    job_id: MedicalIntern
+    job_id: Passenger
 
 - type: entity
   id: SpawnPointSecurityCadet
@@ -111,7 +111,7 @@
   name: security cadet
   components:
   - type: SpawnPoint
-    job_id: SecurityCadet
+    job_id: Passenger
 
 - type: entity
   id: SpawnPointServiceWorker
@@ -119,7 +119,7 @@
   name: service worker
   components:
   - type: SpawnPoint
-    job_id: ServiceWorker
+    job_id: Passenger
 
 - type: entity
   id: SpawnPointBartender
@@ -127,7 +127,7 @@
   name: bartender
   components:
   - type: SpawnPoint
-    job_id: Bartender
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -139,7 +139,7 @@
   name: chef
   components:
   - type: SpawnPoint
-    job_id: Chef
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -151,7 +151,7 @@
   name: botanist
   components:
   - type: SpawnPoint
-    job_id: Botanist
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -163,7 +163,7 @@
   name: clown
   components:
   - type: SpawnPoint
-    job_id: Clown
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -175,7 +175,7 @@
   name: mime
   components:
   - type: SpawnPoint
-    job_id: Mime
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -187,7 +187,7 @@
   name: chaplain
   components:
   - type: SpawnPoint
-    job_id: Chaplain
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -199,7 +199,7 @@
   name: librarian
   components:
   - type: SpawnPoint
-    job_id: Librarian
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -211,7 +211,7 @@
   name: lawyer
   components:
   - type: SpawnPoint
-    job_id: Lawyer
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -223,7 +223,7 @@
   name: janitor
   components:
   - type: SpawnPoint
-    job_id: Janitor
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -235,7 +235,7 @@
   name: musician
   components:
     - type: SpawnPoint
-      job_id: Musician
+      job_id: Passenger
     - type: Sprite
       layers:
         - state: green
@@ -249,7 +249,7 @@
   name: captain
   components:
   - type: SpawnPoint
-    job_id: Captain
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -261,7 +261,7 @@
   name: headofpersonnel
   components:
   - type: SpawnPoint
-    job_id: HeadOfPersonnel
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -275,7 +275,7 @@
   name: chiefengineer
   components:
   - type: SpawnPoint
-    job_id: ChiefEngineer
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -287,7 +287,7 @@
   name: stationengineer
   components:
   - type: SpawnPoint
-    job_id: StationEngineer
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -299,7 +299,7 @@
   name: atmospherics
   components:
     - type: SpawnPoint
-      job_id: AtmosphericTechnician
+      job_id: Passenger
     - type: Sprite
       layers:
         - state: green
@@ -313,7 +313,7 @@
   name: chiefmedicalofficer
   components:
   - type: SpawnPoint
-    job_id: ChiefMedicalOfficer
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -325,7 +325,7 @@
   name: medicaldoctor
   components:
   - type: SpawnPoint
-    job_id: MedicalDoctor
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -337,7 +337,7 @@
   name: chemist
   components:
   - type: SpawnPoint
-    job_id: Chemist
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -351,7 +351,7 @@
   name: researchdirector
   components:
   - type: SpawnPoint
-    job_id: ResearchDirector
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -363,7 +363,7 @@
   name: scientist
   components:
   - type: SpawnPoint
-    job_id: Scientist
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -377,7 +377,7 @@
   name: headofsecurity
   components:
   - type: SpawnPoint
-    job_id: HeadOfSecurity
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -389,7 +389,7 @@
   name: warden
   components:
   - type: SpawnPoint
-    job_id: Warden
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -401,7 +401,7 @@
   name: securityofficer
   components:
   - type: SpawnPoint
-    job_id: SecurityOfficer
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -413,7 +413,7 @@
   name: detective
   components:
   - type: SpawnPoint
-    job_id: Detective
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -427,7 +427,7 @@
   name: ERTleader
   components:
   - type: SpawnPoint
-    job_id: ERTLeader
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -439,7 +439,7 @@
   name: ERTengineer
   components:
   - type: SpawnPoint
-    job_id: ERTEngineer
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -451,7 +451,7 @@
   name: ERTmedical
   components:
   - type: SpawnPoint
-    job_id: ERTMedical
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -463,7 +463,7 @@
   name: ERTsecurity
   components:
   - type: SpawnPoint
-    job_id: ERTSecurity
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -475,7 +475,7 @@
   name: ERTjanitor
   components:
   - type: SpawnPoint
-    job_id: ERTJanitor
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -489,7 +489,7 @@
   name: reporter
   components:
   - type: SpawnPoint
-    job_id: Reporter
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -501,7 +501,7 @@
   name: psychologist
   components:
   - type: SpawnPoint
-    job_id: Psychologist
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green
@@ -513,7 +513,7 @@
   name: zookeeper
   components:
   - type: SpawnPoint
-    job_id: Zookeeper
+    job_id: Passenger
   - type: Sprite
     layers:
       - state: green

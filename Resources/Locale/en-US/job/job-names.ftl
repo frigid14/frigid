@@ -14,7 +14,7 @@ job-name-lawyer = lawyer
 job-name-janitor = janitor
 job-name-botanist = farmer
 job-name-bartender = bartender
-job-name-passenger = unemployed
+job-name-passenger = survivor
 job-name-chef = chef
 
 job-name-ertleader = ERT leader

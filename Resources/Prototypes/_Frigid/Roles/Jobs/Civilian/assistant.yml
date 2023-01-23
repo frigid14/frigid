@@ -3,20 +3,15 @@
   name: job-name-passenger
   description: job-description-passenger
   playTimeTracker: JobPassenger
-  startingGear: PassengerGear
+  startingGear: SurvivorGear
   icon: "Passenger"
-  supervisors: job-supervisors-everyone
-  access:
-  - Maintenance
+  supervisors: job-supervisors-trust
 
 - type: startingGear
-  id: PassengerGear
+  id: SurvivorGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorGrey
-    back: ClothingBackpackFilled
+    jumpsuit: ClothingBackpackSalvage
+    back: ClothingBackpackSalvage
     shoes: ClothingShoesColorBlack
-    id: PassengerPDA
-    ears: ClothingHeadsetGrey
   innerclothingskirt: ClothingUniformJumpskirtColorGrey
-  satchel: ClothingBackpackSatchelFilled
-  duffelbag: ClothingBackpackDuffelFilled
+  satchel: ClothingBackpackSatchelSalvage

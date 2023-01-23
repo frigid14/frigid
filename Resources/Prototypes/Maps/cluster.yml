@@ -14,17 +14,3 @@
         - Passenger
       availableJobs:
         Passenger: [ -1, -1 ]
-        Bartender: [ 1, 1 ]
-        Botanist: [ 2, 2 ]
-        Chef: [ 1, 1 ]
-        Janitor: [ 1, 1 ]
-        StationEngineer: [ 2, 2 ]
-        MedicalDoctor: [ 1, 1 ]
-        Chemist: [ 1, 1 ]
-        SecurityOfficer: [ 2, 2 ]
-        Librarian: [ 1, 1 ]
-        Lawyer: [ 1, 1 ]
-        Musician: [ 1, 1 ]
-        TechnicalAssistant: [ 1, 1 ]
-        MedicalIntern: [ 1, 1 ]
-        SecurityCadet: [ 1, 1 ]

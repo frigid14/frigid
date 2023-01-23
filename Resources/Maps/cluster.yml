@@ -17113,7 +17113,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 1110
-  type: CaptainIDCard
+  type: PassengerIDCard
   components:
   - pos: 32.503216,-0.40828627
     parent: 127

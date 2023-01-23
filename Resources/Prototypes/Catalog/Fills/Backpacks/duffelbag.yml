@@ -144,7 +144,6 @@
       - id: ClothingOuterVestKevlar
       - id: Paper
       - id: Pen
-      - id: CentcomPDA
 
 - type: entity
   parent: ClothingBackpackDuffelClown
@@ -159,7 +158,6 @@
       - id: ClothingShoesClown
       - id: ClothingMaskClown
       - id: BikeHorn
-      - id: ClownPDA
       - id: ClothingHeadsetService
 
 - type: entity
