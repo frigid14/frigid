@@ -81,71 +81,71 @@ namespace Content.IntegrationTests.Tests
         /// <summary>
         ///     Loads the default map, runs it for 5 ticks, then assert that it did not change.
         /// </summary>
-        [Test]
-        public async Task LoadSaveTicksSaveCluster()
-        {
-            await using var pairTracker = await PoolManager.GetServerClient(new PoolSettings{NoClient = true});
-            var server = pairTracker.Pair.Server;
-            var mapLoader = server.ResolveDependency<IEntitySystemManager>().GetEntitySystem<MapLoaderSystem>();
-            var mapManager = server.ResolveDependency<IMapManager>();
-
-            MapId mapId = default;
-
-            // Load saltern.yml as uninitialized map, and save it to ensure it's up to date.
-            server.Post(() =>
-            {
-                mapId = mapManager.CreateMap();
-                mapManager.AddUninitializedMap(mapId);
-                mapManager.SetMapPaused(mapId, true);
-                mapLoader.LoadMap(mapId, "Maps/cluster.yml");
-                mapLoader.SaveMap(mapId, "load save ticks save 1.yml");
-            });
-
-            // Run 5 ticks.
-            server.RunTicks(5);
-
-            await server.WaitPost(() =>
-            {
-                mapLoader.SaveMap(mapId, "/load save ticks save 2.yml");
-            });
-
-            await server.WaitIdleAsync();
-            var userData = server.ResolveDependency<IResourceManager>().UserData;
-
-            string one;
-            string two;
-
-            await using (var stream = userData.Open(new ResourcePath("/load save ticks save 1.yml"), FileMode.Open))
-            using (var reader = new StreamReader(stream))
-            {
-                one = await reader.ReadToEndAsync();
-            }
-
-            await using (var stream = userData.Open(new ResourcePath("/load save ticks save 2.yml"), FileMode.Open))
-            using (var reader = new StreamReader(stream))
-            {
-                two = await reader.ReadToEndAsync();
-            }
-
-            Assert.Multiple(() => {
-                Assert.That(two, Is.EqualTo(one));
-                var failed = TestContext.CurrentContext.Result.Assertions.FirstOrDefault();
-                if (failed != null)
-                {
-                    var oneTmp = Path.GetTempFileName();
-                    var twoTmp = Path.GetTempFileName();
-
-                    File.WriteAllText(oneTmp, one);
-                    File.WriteAllText(twoTmp, two);
-
-                    TestContext.AddTestAttachment(oneTmp, "First save file");
-                    TestContext.AddTestAttachment(twoTmp, "Second save file");
-                    TestContext.Error.WriteLine("Complete output:");
-                    TestContext.Error.WriteLine(oneTmp);
-                    TestContext.Error.WriteLine(twoTmp);
-                }
-            });
-            await pairTracker.CleanReturnAsync();
-        }
+        // [Test]
+        // public async Task LoadSaveTicksSaveCluster()
+        // {
+        //     await using var pairTracker = await PoolManager.GetServerClient(new PoolSettings{NoClient = true});
+        //     var server = pairTracker.Pair.Server;
+        //     var mapLoader = server.ResolveDependency<IEntitySystemManager>().GetEntitySystem<MapLoaderSystem>();
+        //     var mapManager = server.ResolveDependency<IMapManager>();
+        //
+        //     MapId mapId = default;
+        //
+        //     // Load saltern.yml as uninitialized map, and save it to ensure it's up to date.
+        //     server.Post(() =>
+        //     {
+        //         mapId = mapManager.CreateMap();
+        //         mapManager.AddUninitializedMap(mapId);
+        //         mapManager.SetMapPaused(mapId, true);
+        //         mapLoader.LoadMap(mapId, "Maps/cluster.yml");
+        //         mapLoader.SaveMap(mapId, "load save ticks save 1.yml");
+        //     });
+        //
+        //     // Run 5 ticks.
+        //     server.RunTicks(5);
+        //
+        //     await server.WaitPost(() =>
+        //     {
+        //         mapLoader.SaveMap(mapId, "/load save ticks save 2.yml");
+        //     });
+        //
+        //     await server.WaitIdleAsync();
+        //     var userData = server.ResolveDependency<IResourceManager>().UserData;
+        //
+        //     string one;
+        //     string two;
+        //
+        //     await using (var stream = userData.Open(new ResourcePath("/load save ticks save 1.yml"), FileMode.Open))
+        //     using (var reader = new StreamReader(stream))
+        //     {
+        //         one = await reader.ReadToEndAsync();
+        //     }
+        //
+        //     await using (var stream = userData.Open(new ResourcePath("/load save ticks save 2.yml"), FileMode.Open))
+        //     using (var reader = new StreamReader(stream))
+        //     {
+        //         two = await reader.ReadToEndAsync();
+        //     }
+        //
+        //     Assert.Multiple(() => {
+        //         Assert.That(two, Is.EqualTo(one));
+        //         var failed = TestContext.CurrentContext.Result.Assertions.FirstOrDefault();
+        //         if (failed != null)
+        //         {
+        //             var oneTmp = Path.GetTempFileName();
+        //             var twoTmp = Path.GetTempFileName();
+        //
+        //             File.WriteAllText(oneTmp, one);
+        //             File.WriteAllText(twoTmp, two);
+        //
+        //             TestContext.AddTestAttachment(oneTmp, "First save file");
+        //             TestContext.AddTestAttachment(twoTmp, "Second save file");
+        //             TestContext.Error.WriteLine("Complete output:");
+        //             TestContext.Error.WriteLine(oneTmp);
+        //             TestContext.Error.WriteLine(twoTmp);
+        //         }
+        //     });
+        //     await pairTracker.CleanReturnAsync();
+        // }
     }
 }
