@@ -32769,7 +32769,7 @@ entities:
     parent: 0
     type: Transform
 - uid: 3721
-  type: CentcomIDCard
+  type: PassengerIDCard
   components:
   - pos: -16.521366,8.567018
     parent: 0
