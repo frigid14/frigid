@@ -15,3 +15,21 @@
     shoes: ClothingShoesColorBlack
   innerclothingskirt: ClothingUniformJumpskirtColorGrey
   satchel: ClothingBackpackSatchelSalvage
+
+- type: startingGear
+  id: SurvivorGear1
+  equipment:
+    jumpsuit: ClothingBackpackSalvage
+    back: ClothingBackpackSalvage
+    shoes: ClothingShoesColorBlack
+  innerclothingskirt: ClothingUniformJumpskirtColorGrey
+  satchel: ClothingBackpackSatchelSalvage
+
+- type: startingGear
+  id: SurvivorGear2
+  equipment:
+    jumpsuit: ClothingBackpackSalvage
+    back: ClothingBackpackSalvage
+    shoes: ClothingShoesColorBlack
+  innerclothingskirt: ClothingUniformJumpskirtColorGrey
+  satchel: ClothingBackpackSatchelSalvage
