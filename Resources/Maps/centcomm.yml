@@ -27672,25 +27672,25 @@ entities:
     parent: 0
     type: Transform
 - uid: 2905
-  type: CentcomIDCardDeathsquad
+  type: PassengerIDCard
   components:
   - pos: 2.48182,31.94242
     parent: 0
     type: Transform
 - uid: 2906
-  type: CentcomIDCardDeathsquad
+  type: PassengerIDCard
   components:
   - pos: 2.48182,31.78617
     parent: 0
     type: Transform
 - uid: 2907
-  type: CentcomIDCardDeathsquad
+  type: PassengerIDCard
   components:
   - pos: 16.528694,31.87992
     parent: 0
     type: Transform
 - uid: 2908
-  type: CentcomIDCardDeathsquad
+  type: PassengerIDCard
   components:
   - pos: 16.528694,31.676794
     parent: 0
@@ -32769,7 +32769,7 @@ entities:
     parent: 0
     type: Transform
 - uid: 3721
-  type: CentcomIDCard
+  type: PassengerIDCard
   components:
   - pos: -16.521366,8.567018
     parent: 0

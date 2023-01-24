@@ -1,0 +1,35 @@
+- type: job
+  id: Passenger
+  name: job-name-passenger
+  description: job-description-passenger
+  playTimeTracker: JobPassenger
+  startingGear: SurvivorGear
+  icon: "Passenger"
+  supervisors: job-supervisors-trust
+
+- type: startingGear
+  id: SurvivorGear
+  equipment:
+    jumpsuit: ClothingBackpackSalvage
+    back: ClothingBackpackSalvage
+    shoes: ClothingShoesColorBlack
+  innerclothingskirt: ClothingUniformJumpskirtColorGrey
+  satchel: ClothingBackpackSatchelSalvage
+
+- type: startingGear
+  id: SurvivorGear1
+  equipment:
+    jumpsuit: ClothingBackpackSalvage
+    back: ClothingBackpackSalvage
+    shoes: ClothingShoesColorBlack
+  innerclothingskirt: ClothingUniformJumpskirtColorGrey
+  satchel: ClothingBackpackSatchelSalvage
+
+- type: startingGear
+  id: SurvivorGear2
+  equipment:
+    jumpsuit: ClothingBackpackSalvage
+    back: ClothingBackpackSalvage
+    shoes: ClothingShoesColorBlack
+  innerclothingskirt: ClothingUniformJumpskirtColorGrey
+  satchel: ClothingBackpackSatchelSalvage

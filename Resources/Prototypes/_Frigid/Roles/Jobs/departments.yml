@@ -1,0 +1,6 @@
+- type: department
+  id: Civilian
+  description: department-Civilian-description
+  color: "#9FED58"
+  roles:
+  - Passenger
