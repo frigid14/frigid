@@ -16,8 +16,6 @@
     - type: GhostTakeoverAvailable
       name: CentCom official
       description: Inspect the station, jot down performance reviews for heads of staff, bug the Captain.
-    - type: Loadout
-      prototypes: [ CentcomGear ]
 
 ## Syndicate
 
