@@ -676,7 +676,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem
             case 0:
                 name = Loc.GetString("nukeops-role-commander") + " " + _random.PickAndTake(_operativeNames[_nukeopsRuleConfig.EliteNames]);
                 role = _nukeopsRuleConfig.CommanderRolePrototype;
-                gear = _nukeopsRuleConfig;
+                gear = _nukeopsRuleConfig.CommanderStartGearPrototype;
                 break;
             case 1:
                 name = Loc.GetString("nukeops-role-agent") + " " + _random.PickAndTake(_operativeNames[_nukeopsRuleConfig.NormalNames]);
