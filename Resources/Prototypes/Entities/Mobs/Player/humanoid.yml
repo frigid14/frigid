@@ -23,7 +23,8 @@
   id: RandomHumanoidSpawnerSyndicateAgent
   name: Syndicate Agent
   components:
-    - type: Icon
+    - type: Sprite
+      netsync: false
       sprite: Mobs/Species/Human/parts.rsi
       state: full
     - type: RandomHumanoidSpawner
@@ -36,7 +37,8 @@
   id: RandomHumanoidSpawnerNukeOp
   name: Nuclear Operative
   components:
-    - type: Icon
+    - type: Sprite
+      netsync: false
       sprite: Mobs/Species/Human/parts.rsi
       state: full
     - type: RandomHumanoidSpawner
