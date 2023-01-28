@@ -176,12 +176,20 @@
   components:
   - type: PowerSupplier
     supplyRate: 5000 # 260 sec / sheet
+    supplyRampRate: 3000
   - type: Sprite
     sprite: Structures/Power/Generation/portable_generator.rsi
     state: portgen0_1
   - type: Wires
     BoardName: "GeneratorPlasma"
     LayoutId: GeneratorPlasma
+  - type: Generator
+  - type: ActivatableUI
+    key: enum.GeneratorComponentUiKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.GeneratorComponentUiKey.Key
+        type: GeneratorBoundUserInterface
   - type: Machine
     board: GeneratorPlasmaMachineCircuitboard
   - type: UpgradePowerSupplier
@@ -195,9 +203,17 @@
   components:
   - type: PowerSupplier
     supplyRate: 15000 # 85 sec / sheet
+    supplyRampRate: 5000
   - type: Sprite
     sprite: Structures/Power/Generation/portable_generator.rsi
     state: portgen1_1
+  - type: Generator
+  - type: ActivatableUI
+    key: enum.GeneratorComponentUiKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.GeneratorComponentUiKey.Key
+        type: GeneratorBoundUserInterface
   - type: Wires
     BoardName: "GeneratorUranium"
     LayoutId: GeneratorUranium
