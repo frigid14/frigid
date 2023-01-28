@@ -51302,7 +51302,7 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 6608
-  type: CentcomIDCardSyndie
+  type: PassengerIDCard
   components:
   - pos: -16.408298,8.44868
     parent: 0
