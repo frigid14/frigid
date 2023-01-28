@@ -1,0 +1,6 @@
+﻿- type: stack
+  id: Coal
+  name: coal
+  icon: { sprite: Objects/Materials/ore.rsi, state: coal }
+  spawn: Coal1
+  maxCount: 30

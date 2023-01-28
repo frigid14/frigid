@@ -9,9 +9,10 @@
       supplyRate: 5000 # 260 sec / sheet
       supplyRampRate: 3000
     - type: Sprite
-      sprite: _Frigid/Structures/Power/Generation/coal_generator.rsi
+      sprite: Structures/Power/Generation/portable_generator.rsi
       state: portgen0_1
     - type: Generator
+      fuelMaterial: Coal
     - type: ActivatableUI
       key: enum.GeneratorComponentUiKey.Key
     - type: UserInterface

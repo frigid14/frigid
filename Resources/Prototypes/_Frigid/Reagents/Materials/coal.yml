@@ -1,0 +1,7 @@
+﻿- type: material
+  id: Coal
+  stackEntity: Coal1
+  name: materials-coal
+  icon: { sprite: Objects/Materials/ore.rsi, state: coal }
+  color: "#36454f"
+  price: 1
