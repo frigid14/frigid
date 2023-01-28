@@ -1,0 +1,16 @@
+﻿- type: gameMap
+  id: Frigid
+  mapName: 'Frigid'
+  mapPath: /Maps/frigid.yml
+  minPlayers: 0
+  maxPlayers: 999
+  stations:
+    Frigid:
+      mapNameTemplate: '{0} Evacuation Point {1}'
+      nameGenerator:
+        !type:NanotrasenNameGenerator
+        prefixCreator: '14'
+      overflowJobs:
+        - Passenger
+      availableJobs:
+        Passenger: [ -1, -1 ]
