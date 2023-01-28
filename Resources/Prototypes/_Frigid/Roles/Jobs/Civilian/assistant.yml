@@ -11,10 +11,10 @@
   id: SurvivorGear
   equipment:
     jumpsuit: ClothingBackpackSalvage
-    back: ClothingBackpackSalvage
+    back: ClothingBackpackSalvageFilled
     shoes: ClothingShoesColorBlack
   innerclothingskirt: ClothingUniformJumpskirtColorGrey
-  satchel: ClothingBackpackSatchelSalvage
+  satchel: ClothingBackpackSatchelSalvageFilled
 
 - type: startingGear
   id: SurvivorGear1
