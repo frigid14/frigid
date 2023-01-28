@@ -1,4 +1,6 @@
-﻿using Content.Server.Materials;
+﻿using System.Diagnostics;
+using System.Linq;
+using Content.Server.Materials;
 using Content.Server.Power.Components;
 using Content.Server.Stack;
 using Content.Shared.Construction.Components;
@@ -33,7 +35,9 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
 
         var materials = mat.Materials;
 
-        if (!mat.MaterialIds.Contains(component.FuelMaterial))
+        Logger.Debug($"{mat.Materials.ToList()} {materials.Keys.ToList()}");
+
+        if (!materials.Keys.ToList().Contains(component.FuelMaterial))
             return;
 
         component.RemainingFuel += stack.Count;
