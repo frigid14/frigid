@@ -1,8 +1,8 @@
 ﻿- type: entity
   parent: BaseSMES
   id: SMESBones
-  suffix: Bare, 2MW
+  suffix: Bare, 1MW
   components:
     - type: Battery
-      maxCharge: 2000000
-      startingCharge: 2000000
+      maxCharge: 1000000
+      startingCharge: 0
