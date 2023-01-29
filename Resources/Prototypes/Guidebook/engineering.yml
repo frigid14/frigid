@@ -1,12 +1,4 @@
 ﻿- type: guideEntry
-  id: Engineering
-  name: guide-entry-engineering
-  text: "/Server Info/Guidebook/Engineering.xml"
-  children:
-  - Atmospherics
-  - Power
-
-- type: guideEntry
   id: Atmospherics
   name: guide-entry-atmospherics
   text: "/Server Info/Guidebook/Atmospherics.xml"
