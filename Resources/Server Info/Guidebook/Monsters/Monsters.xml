@@ -1,0 +1,9 @@
+﻿<Document>
+  # Monsters
+
+  After the world has ended, there are more threats than just bandits - there are [color=#a4885c]monsters[/color] as well! Every monster has a dedicated page in the guidebook so that [color=#a4885c]YOU[/color] can survive!
+
+  <Box>
+    <GuideEntityEmbed Entity="MobGiantSpider"/>
+  </Box>
+</Document>
