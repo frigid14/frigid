@@ -25,7 +25,6 @@
     - type: PowerSupplier
       supplyRate: 5000 # 260 sec / sheet
       supplyRampRate: 3000
-    - type: ContainerContainer
     - type: GuideHelp
       guides: [ Power, Generators ]
     - type: Sprite
