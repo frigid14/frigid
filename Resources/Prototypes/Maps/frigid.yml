@@ -7,6 +7,7 @@
   stations:
     Frigid:
       mapNameTemplate: '{0} Evacuation Point {1}'
+      emergencyShuttlePath: /Maps/Shuttles/emergency_pod.yml
       nameGenerator:
         !type:NanotrasenNameGenerator
         prefixCreator: '14'
