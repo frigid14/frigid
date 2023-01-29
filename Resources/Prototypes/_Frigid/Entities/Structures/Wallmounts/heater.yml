@@ -9,6 +9,7 @@
   components:
     - type: Sprite
       netsync: false
+      drawdepth: FloorObjects
       sprite: _Frigid/Structures/Wallmounts/heater.rsi
       state: full
     - type: Icon
@@ -23,7 +24,7 @@
     - type: Physics
       bodyType: Static
     - type: ApcPowerReceiver
-      powerLoad: 5000
+      powerLoad: 500
     - type: ExtensionCableReceiver
     - type: AmbientHeater
     - type: Fixtures
