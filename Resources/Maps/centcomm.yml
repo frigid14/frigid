@@ -51361,7 +51361,7 @@ entities:
     parent: 0
     type: Transform
 - uid: 6617
-  type: CentcomPDA
+  type: PassengerIDCard
   components:
   - pos: -20.428675,10.647655
     parent: 0
