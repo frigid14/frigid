@@ -1,0 +1,39 @@
+﻿- type: entity
+  id: FloorHeater
+  name: floor heater
+  description: Shouldn't this be on the wall?
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: _Frigid/Structures/Wallmounts/heater.rsi
+      state: full
+    - type: Icon
+      state: full
+      sprite: _Frigid/Structures/Wallmounts/heater.rsi
+    - type: Tag
+      tags:
+        - Structure
+    - type: Transform
+      anchored: true
+    - type: Clickable
+    - type: Physics
+      bodyType: Static
+    - type: ApcPowerReceiver
+      powerLoad: 5000
+    - type: ExtensionCableReceiver
+    - type: AmbientHeater
+    - type: Fixtures
+      fixtures:
+        - shape:
+            !type:PhysShapeAabb
+            bounds: "-0.45,-0.45,0.45,0.45"
+          density: 60
+          hard: false
+          mask:
+            - MachineMask
+          layer:
+            - FullTileLayer
