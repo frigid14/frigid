@@ -1288,6 +1288,8 @@
       state: tarantula
       sprite: Mobs/Animals/spider.rsi
   - type: Physics
+  - type: GuideHelp
+    guides: [ Monsters, Spider ]
   - type: Fixtures
     fixtures:
     - shape:
@@ -1360,7 +1362,7 @@
       makeSentient: true
       name: ghost-role-information-giant-spider-name
       description: ghost-role-information-giant-spider-description
-      
+
 - type: entity
   name: possum
   parent: SimpleMobBase
