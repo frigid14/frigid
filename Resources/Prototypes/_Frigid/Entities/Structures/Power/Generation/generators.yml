@@ -19,12 +19,13 @@
   parent: BaseGenerator
   id: GeneratorCoal
   name: coal generator
-  description: Generates power from sheets of solid plasma.
-  suffix: Plasma, 5kW
+  description: Generates power from sheets of solid coal.
+  suffix: Coal, 5kW
   components:
     - type: PowerSupplier
       supplyRate: 5000 # 260 sec / sheet
       supplyRampRate: 3000
+    - type: ContainerContainer
     - type: GuideHelp
       guides: [ Power, Generators ]
     - type: Sprite
@@ -38,8 +39,3 @@
       interfaces:
         - key: enum.GeneratorComponentUiKey.Key
           type: GeneratorBoundUserInterface
-    - type: Machine
-      board: GeneratorPlasmaMachineCircuitboard
-    - type: UpgradePowerSupplier
-      powerSupplyMultiplier: 1.25
-      scaling: Exponential
