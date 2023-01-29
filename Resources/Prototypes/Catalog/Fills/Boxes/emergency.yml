@@ -4,14 +4,21 @@
   id: BoxSurvival
   description: It's a box with enough supplies to keep you alive.
   components:
+  - type: Item
+    sprite: Objects/Storage/boxes.rsi
+    size: 40
+  - type: Storage
+    capacity: 40
+    size: 10
   - type: StorageFill
     contents:
       - id: ClothingMaskBreath
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
-      - id: Flare
+      - id: FlashlightLantern
       - id: FoodTinMRE
       - id: CrowbarRed
+      - id: WeaponPistolViper
   - type: Sprite
     layers:
       - state: internals
