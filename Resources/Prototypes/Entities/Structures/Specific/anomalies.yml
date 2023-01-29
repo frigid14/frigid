@@ -20,7 +20,7 @@
   - type: Transform
     anchored: true
   - type: Physics
-    bodyType: Static  
+    bodyType: Static
   - type: Fixtures
     fixtures:
     - shape:
@@ -39,11 +39,8 @@
   - type: Clickable
   - type: Damageable
   - type: Appearance
-  - type: GuideHelp
-    guides:
-    - AnomalousResearch
   - type: EmitSoundOnSpawn
-    sound: 
+    sound:
       path: /Audio/Effects/teleport_arrival.ogg
 
 - type: entity

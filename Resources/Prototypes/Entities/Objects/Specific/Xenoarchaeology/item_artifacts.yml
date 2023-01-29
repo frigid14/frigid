@@ -56,9 +56,6 @@
     sprite: Objects/Specific/Xenoarchaeology/item_artifacts.rsi
     heldPrefix: ano01
   - type: Actions
-  - type: GuideHelp
-    guides:
-    - Xenoarchaeology
 
 - type: entity
   parent: BaseXenoArtifactItem
