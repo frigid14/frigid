@@ -1,0 +1,8 @@
+﻿- type: entity
+  parent: BaseAPC
+  id: APCBare
+  suffix: Bare, 10kW
+  components:
+    - type: Battery
+      maxCharge: 10000
+      startingCharge: 0

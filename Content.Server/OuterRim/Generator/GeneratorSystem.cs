@@ -35,8 +35,6 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
 
         var materials = mat.Materials;
 
-        Logger.Debug($"{mat.Materials.ToList()} {materials.Keys.ToList()}");
-
         if (!materials.Keys.ToList().Contains(component.FuelMaterial))
             return;
 

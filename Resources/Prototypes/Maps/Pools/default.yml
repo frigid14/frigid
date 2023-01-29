@@ -1,4 +1,9 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Cluster
+    - Frigid
+
+- type: gameMapPool
+  id: DebugMapPool
+  maps:
+    - Cluster
