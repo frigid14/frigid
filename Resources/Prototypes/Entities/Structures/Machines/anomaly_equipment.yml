@@ -86,9 +86,6 @@
         sound:
           path: /Audio/Effects/metalbreak.ogg
       - !type:ExplodeBehavior
-  - type: GuideHelp
-    guides:
-    - ScannersAndVessels
 
 - type: entity
   id: MachineAPE
@@ -148,9 +145,6 @@
     baseFireBurstDelayMax: 6
   - type: ApcPowerReceiver
     powerLoad: 100
-  - type: GuideHelp
-    guides:
-    - APE
   - type: Gun
     fireRate: 10 #just has to be fast enough to keep up with upgrades
     showExamineText: false
@@ -271,6 +265,3 @@
   - type: WiresVisuals
   - type: StaticPrice
     price: 5000
-  - type: GuideHelp
-    guides:
-    - AnomalousResearch

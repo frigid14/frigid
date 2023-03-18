@@ -8,8 +8,10 @@
     sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHardsuitWinterHood
   - type: TemperatureProtection
-    coefficient: 0.1
+    coefficient: 0.05
   - type: Item
     size: 10
   - type: Armor

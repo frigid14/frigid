@@ -60,7 +60,7 @@
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: Item
     sprite: Objects/Specific/Medical/medipen.rsi
-    size: 3
+    size: 2
   - type: SolutionContainerManager
     solutions:
       pen:

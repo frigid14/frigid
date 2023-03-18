@@ -32,8 +32,6 @@
   - type: GhostTakeoverAvailable
     name: Skeleton Pirate
     description: Cause chaos and loot the station for treasure.
-  - type: Loadout
-    prototypes: [PirateGear]
   - type: RandomHumanoidAppearance
 
 
@@ -45,6 +43,4 @@
   - type: GhostTakeoverAvailable
     name: Skeleton Biker
     description: Ride around on your sweet ride.
-  - type: Loadout
-    prototypes: [SkeletonBiker]
   - type: RandomHumanoidAppearance
