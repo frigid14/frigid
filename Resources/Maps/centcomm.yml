@@ -27792,25 +27792,25 @@ entities:
     parent: 0
     type: Transform
 - uid: 2905
-  type: PassengerIDCard
+  type: CentcomIDCardDeathsquad
   components:
   - pos: 2.48182,31.94242
     parent: 0
     type: Transform
 - uid: 2906
-  type: PassengerIDCard
+  type: CentcomIDCardDeathsquad
   components:
   - pos: 2.48182,31.78617
     parent: 0
     type: Transform
 - uid: 2907
-  type: PassengerIDCard
+  type: CentcomIDCardDeathsquad
   components:
   - pos: 16.528694,31.87992
     parent: 0
     type: Transform
 - uid: 2908
-  type: PassengerIDCard
+  type: CentcomIDCardDeathsquad
   components:
   - pos: 16.528694,31.676794
     parent: 0
@@ -32885,7 +32885,7 @@ entities:
     parent: 0
     type: Transform
 - uid: 3721
-  type: PassengerIDCard
+  type: CentcomIDCard
   components:
   - pos: -16.521366,8.567018
     parent: 0
@@ -51379,7 +51379,7 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 6608
-  type: PassengerIDCard
+  type: CentcomIDCardSyndie
   components:
   - pos: -16.408298,8.44868
     parent: 0
@@ -51438,7 +51438,7 @@ entities:
     parent: 0
     type: Transform
 - uid: 6617
-  type: PassengerIDCard
+  type: CentcomPDA
   components:
   - pos: -20.428675,10.647655
     parent: 0

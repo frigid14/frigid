@@ -2,6 +2,7 @@
   id: PTechInventory
   startingInventory:
     PassengerPDA: 5
+    ClearPDA: 5
     PassengerIDCard: 5
     ClothingHeadsetGrey: 5
     RubberStampApproved: 1

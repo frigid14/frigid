@@ -98,7 +98,7 @@
       volume: 3
       temperature: 293.15
   - type: Item
-    size: 5
+    size: 10
   - type: Clothing
     sprite: Objects/Tanks/emergency.rsi
     slots:

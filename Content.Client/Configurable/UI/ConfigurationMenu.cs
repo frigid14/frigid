@@ -62,7 +62,7 @@ namespace Content.Client.Configurable.UI
             {
                 VerticalExpand = true,
                 HorizontalExpand = true,
-                ModulateSelfOverride = Color.FromHex("#202020")
+                ModulateSelfOverride = Color.FromHex("#202025")
             };
 
             outerColumn.AddChild(_column);

@@ -10,9 +10,6 @@ materials-gold = gold
 materials-silver = silver
 materials-plasteel = plasteel
 
-# Coal
-materials-coal = coal
-
 # Other
 materials-biomass = biomass
 materials-cloth = cloth

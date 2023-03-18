@@ -1,8 +1,0 @@
-﻿- type: entity
-  parent: BaseSubstation
-  id: SubstationBare
-  suffix: Bare, 0.5MW
-  components:
-    - type: Battery
-      maxCharge: 500000
-      startingCharge: 0

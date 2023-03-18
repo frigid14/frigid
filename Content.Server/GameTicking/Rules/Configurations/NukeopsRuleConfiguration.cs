@@ -42,13 +42,13 @@ public sealed class NukeopsRuleConfiguration : GameRuleConfiguration
     public string OperativeRoleProto = "Nukeops";
 
     [DataField("commanderStartingGearProto", customTypeSerializer: typeof(PrototypeIdSerializer<StartingGearPrototype>))]
-    public string CommanderStartGearPrototype = "SurvivorGear1";
+    public string CommanderStartGearPrototype = "SyndicateCommanderGearFull";
 
     [DataField("medicStartGearProto", customTypeSerializer: typeof(PrototypeIdSerializer<StartingGearPrototype>))]
-    public string MedicStartGearPrototype = "SurvivorGear2";
+    public string MedicStartGearPrototype = "SyndicateOperativeMedicFull";
 
     [DataField("operativeStartGearProto", customTypeSerializer: typeof(PrototypeIdSerializer<StartingGearPrototype>))]
-    public string OperativeStartGearPrototype = "SurvivorGear";
+    public string OperativeStartGearPrototype = "SyndicateOperativeGearFull";
 
     [DataField("eliteNames", customTypeSerializer: typeof(PrototypeIdSerializer<DatasetPrototype>))]
     public string EliteNames = "SyndicateNamesElite";

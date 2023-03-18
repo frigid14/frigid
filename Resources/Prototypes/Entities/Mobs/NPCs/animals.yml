@@ -1305,8 +1305,6 @@
       state: tarantula
       sprite: Mobs/Animals/spider.rsi
   - type: Physics
-  - type: GuideHelp
-    guides: [ Monsters, Spider ]
   - type: Fixtures
     fixtures:
     - shape:

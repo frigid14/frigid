@@ -1,24 +1,17 @@
 - type: entity
-  name: emergency box
+  name: survival box
   parent: BoxCardboard
   id: BoxSurvival
-  description: It's a box with enough supplies to keep you alive.
+  description: It's a box with basic internals inside.
   components:
-  - type: Item
-    sprite: Objects/Storage/boxes.rsi
-    size: 40
-  - type: Storage
-    capacity: 40
-    size: 10
   - type: StorageFill
     contents:
       - id: ClothingMaskBreath
       - id: EmergencyOxygenTankFilled
+      - id: SpaceMedipen
       - id: EmergencyMedipen
-      - id: FlashlightLantern
+      - id: Flare
       - id: FoodTinMRE
-      - id: CrowbarRed
-      - id: WeaponPistolViper
   - type: Sprite
     layers:
       - state: internals

@@ -12,5 +12,3 @@ job-supervisors-medicine = medical doctors, chemists, and the chief medical offi
 job-supervisors-security = security officers, the warden, and the head of security
 job-supervisors-hire = whoever hires you
 job-supervisors-everyone = absolutely everyone
-
-job-supervisors-trust = anyone you can trust

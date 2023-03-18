@@ -1,9 +1,0 @@
-﻿- type: parallax
-  id: Dirt
-  layers:
-    - texture:
-        !type:ImageParallaxTextureSource
-        path: "/Textures/Tiles/dirt.png"
-      slowness: 0
-      scale: "1, 1"
-      shader: ""
